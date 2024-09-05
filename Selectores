@@ -1,0 +1,13 @@
+Selectores
+Etiquetas, identificador, clase
+pseudo Etiquetas
+
+Etiquetas -- pues una etiqueta html
+identificador -- solo para un elemento y es unica
+clase -- identifica a un conjunto de elementos (multiples elementos del mismo tipo de preferencia)
+
+selector o un conjunto {
+    atributo: valor;
+    atributo: valor;
+    atributo: valor;
+}
