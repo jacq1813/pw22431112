@@ -6,3 +6,29 @@ body{
     max-width: 1024px;
 
 }
+
+header nav ol {
+
+    text-align: center;
+
+}
+
+
+header nav ol li {
+
+    display: inline;
+    margin-right: 10px;
+    border: 1px solid purple;
+    display: inline-block;
+    color: #fff;
+    background-color: purple;
+    padding: 10px 26px;
+    /*padding: 16px; ff */
+
+}
+
+header nav ol li:hover {
+
+    background-color: wheat;
+    color: black;
+}
