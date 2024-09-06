@@ -1,0 +1,64 @@
+body{
+
+    border: 1px solid red;
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 1024px;
+
+}
+
+header nav ol {
+
+    text-align: center;
+
+}
+
+
+header nav ol li {
+
+    display: inline;
+    margin-right: 10px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    background-color: purple;
+    padding: 10px 26px;
+    box-shadow: 4px 4px 10px rgb(97, 97, 97);
+    /*padding: 16px; ff */
+
+}
+
+header nav ol li:hover {
+
+    background-color: wheat;
+    color: black;
+    box-shadow: 0px 0px 0px;
+}
+
+header img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+}
+
+footer {
+
+    border: 1px solid rgb(9, 8, 45);
+    
+
+}
+
+main section article {
+
+    border: 1px solid rgb(128, 0, 0);
+
+    display: inline-block;
+
+    vertical-align: top;
+    width: 32.8%;
+    
+
+}
