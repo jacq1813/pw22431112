@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    /* 1em = 16px */
     margin: 0px;
     max-width: 1024px;
 }
@@ -27,12 +28,61 @@ header nav form {
     margin-top: -40px;
 }
 
+header nav form input {
+    border-radius: 5px;
+}
+
+
+header nav form input[type="submit"] {
+    background: green;
+    color: #ffffff;
+    border: 1px solid green;
+}
+
 header nav ul li {
-    color: white;
+    color: #fff;
     display: inline-block;
     margin-right: 20px;
 }
 
 #logo {
     margin-top: -150px;
+}
+
+#seccion01 {
+    margin-top: 15px;
+}
+
+#seccion01 article {
+    text-align: center;
+}
+
+#seccion01 article img {
+    border: 5px solid rgba(150, 150, 150, 0.5);
+    width: 98%;
+}
+
+#seccion02 article {
+    display: inline-block;
+}
+
+#seccion2 article input[type="submit"] {
+    background: white;
+    color: blue;
+    padding: 5px 15px;
+}
+
+.otraSeccion {
+    font-size: 2.5em;
+    /* 2 * 16px = 32px */
+}
+
+.unaSeccion {
+    font-size: 4.5em;
+    /* 4.5 * 16px = 72px */
+
+}
+
+.nito {
+    font-weight: bold;
 }
