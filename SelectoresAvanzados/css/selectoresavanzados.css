@@ -1,0 +1,102 @@
+img[alt]{
+    border: 5px solid blue;
+}
+
+img[src="img/Logo_tec.png"]{
+    width: 400px;
+}
+
+/* completa una subcade */
+img[src^="img/"]{
+    width: 150px;
+}
+/* el signo de pesos busca al final de la cadena */
+img[src$=".png"]{
+    width: 250px;
+}
+
+/* el asterisco busca en cualquier parte de la cadena */
+img[src*="Logo"]{
+    width: 300px;
+}
+
+/*
+    Selectores de atributo
+    es equivalente a
+    .resaltado
+    .ingles
+    .archivo
+*/
+article[class~="resaltado"]{
+    border: 1px dashed blue;
+}
+
+article[class~="ingles"]{
+    border: 1px dashed blue;
+}
+
+article[class~="archivo"]{
+    border: 1px dashed blue;
+}
+
+article[class|="ingles"]{
+    text-align: center;
+}
+
+/* toma todas las P que esten despues de un h2 hijos especificos */
+div > p{
+    color: blue;
+}
+/* toma todas las P que esten despues de un h2 con todo hijos y nietos*/
+div p{
+    color: red;
+}
+
+/* toma todas las P que esten despues de un h2 */
+h2 + p{
+    color: gray;
+}
+
+/* toma todas las P que esten despues de un h2 */
+h2 ~ p{
+    color: green;
+}
+
+#resumen,#experimento,#pruebas,#resultados,#conclusiones,#referencias{
+    color: red;    
+}
+/* todos los elementos que no sean #referencias */
+section:not(#referencias){
+    color: blue;
+}
+
+/* todos los elementos impares los ponemos de color verde */
+li:nth-child(odd){
+    color: green;
+}
+
+/* todos los elementos pares los ponemos de color red */
+li:nth-child(even){
+    color: blue;
+}
+
+/* el quinto elemento de la lista color rojo */
+li:nth-child(5){
+    color: red;
+}
+
+/* el ultimo elemento de la lista color rojo */
+li:nth-last-child(1){
+    color: red;
+}
+
+li:nth-last-child(2){
+    color: purple;
+}
+
+
+/* el primer elemento de la lista color rojo */
+p:first-line{
+    color: red;
+    font-weight: bold;
+}
