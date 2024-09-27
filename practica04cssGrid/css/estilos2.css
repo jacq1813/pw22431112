@@ -1,10 +1,26 @@
-body {
+body{
+    
     font-family: sans-serif;
-    background: #fbc2eb;
+    background: #f2f2f2;
 }
-
-
-
-.acercade_gradiente {
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+.acercade{
+    height: 500px;
+    margin: 80px auto;
+    width: 900px;
+}
+.acercade_img{
+    height: 100%;
+    width: 100%;
+}
+.acercade_gradiente{
+    background-image: linear-gradient(to top,#0250C5 0%,#D43F8D 100%);
+}
+.acercade_article{
+    background: #FFF;
+    box-shadow: 0px 0px 10px -8px black;
+    padding: 1.5em;   
+}
+.acercade_titulo{
+    font-size: 2em;
+    margin-bottom: 16px;
 }
