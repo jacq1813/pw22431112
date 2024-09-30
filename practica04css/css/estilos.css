@@ -6,7 +6,6 @@ body {
     font-family: 'Trebuchet MS', sans-serif
 }
 
-
 header nav ul li {
     color: rgb(1, 1, 1);
     display: inline-block;
@@ -22,8 +21,8 @@ ul {
 
 #FirstBMain {
     height: 50px;
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 20px;
+
 }
 
 #goShop {
@@ -53,24 +52,26 @@ ul {
 
 #footarriba {
     display: flex;
-    height: 25px;
+    width: 100%;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+
 }
 
 #footabajo {
     display: flex;
-    padding-top: 40px;
-    gap: 30px;
+    padding-top: 50px;
+    justify-content: space-between;
 }
 
 .pequenos {
     float: right;
-    width: 30px;
+    width: 35px;
     padding: 5px;
 }
 
 .punteada {
+    border: none;
     border-bottom: 2px dashed rgb(156, 156, 156);
 }
 
@@ -79,7 +80,15 @@ ul {
 }
 
 .colorverde {
-    color: rgb(22, 200, 22);
+    color: rgb(149, 240, 94);
+}
+
+.colorgris {
+    color: rgb(121, 121, 121);
+}
+
+.letrachica {
+    font-size: 0.9em;
 }
 
 .mitad {
