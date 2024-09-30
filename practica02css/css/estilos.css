@@ -1,39 +1,45 @@
-body{
+body {
     font-size: 16px;
     margin: 0px auto;
     /* Recomendación del cliente */
     max-width: 1078px;
     min-width: 1078px;
 }
-footer{
-    background: rgba(68,101,177,1);
+
+footer {
+    background: rgba(68, 101, 177, 1);
     color: white;
     margin-top: 40px;
 }
-footer article{
+
+footer article {
     display: inline-block;
     width: 32.8%;
 }
-header input{
+
+header input {
     float: right;
     margin-right: -200px;
     margin-top: 15px;
 }
-header nav{
+
+header nav {
     /* border: 1px solid red;   */
     margin-left: 220px;
     /* text-align: center; */
 }
-header nav ul li{
+
+header nav ul li {
     border-bottom: 1px solid lightgray;
     color: lightgray;
     display: inline-block;
     font-size: 1.8em;
-    margin-right: 15px;
+    margin-right: 10px;
     padding-bottom: 2px;
     /* text-decoration: underline; */
 }
-#bgoffer{
+
+#bgoffer {
     /* static es por defecto 
        se usa margin 
     */
@@ -41,79 +47,99 @@ header nav ul li{
     top: -406px;
     position: relative;
 }
-#granthams{
+
+#granthams {
     margin-left: 25px;
     margin-top: 25px;
 }
-#paint{
+
+#paint {
     float: right;
 }
-#primerSeccion{
+
+#primerSeccion {
     height: 318px;
     margin-top: 60px;
 }
-#primerSeccion article{
+
+#primerSeccion article {
     display: inline-block;
     vertical-align: top;
 }
-#secc01art01{
+
+#secc01art01 {
     margin-left: 30px;
     width: 60%;
 }
-#secc01art02{
+
+#secc01art02 {
     margin-left: 50px;
     width: 30%;
 }
-#secc01art02 ul{
+
+#secc01art02 ul {
     /* se borran los círculos negros */
     list-style: none;
     margin-left: -40px;
 }
-#secc01art02 ul li:before{
+
+#secc01art02 ul li:before {
     /* se pinta el círculo rosa */
     content: "• ";
     /* content: "😀"; */
     color: #FF0099
 }
-#secc03art04{
+
+#secc03art04 {
     /* border: 1px solid red; */
     margin-top: 40px;
     /* padding-top: 40px; */
 }
-#secc03art04 input{
+
+#secc03art04 input {
     border-radius: 5px;
 }
-#secc03art04 input[type="button"]{
+
+#secc03art04 input[type="button"] {
     background: #8BC500;
     color: white;
 }
-#segundaSeccion article{
+
+#segundaSeccion article {
     margin-right: 165px;
     text-align: right;
 }
-#terceraSeccion article{
+
+#terceraSeccion article {
     display: inline-block;
     vertical-align: top;
     width: 23%;
 }
-#terceraSeccion article img{
+
+#terceraSeccion article img {
     vertical-align: middle;
 }
-.colorazul{
+
+.colorazul {
     color: #4267B3
 }
-.colorrosa{
+
+.colorrosa {
     color: #FF0099;
 }
-.colorverde{
+
+.colorverde {
     color: #8BC500;
 }
-.letragrande{
+
+.letragrande {
     font-size: 3.5em;
 }
-.letramediana{
+
+.letramediana {
     font-size: 2em;
 }
-.nito{
+
+.nito {
     font-weight: bold;
 }

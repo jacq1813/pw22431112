@@ -1,0 +1,114 @@
+body {
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 1024px;
+    min-width: 1024px;
+    font-family: 'Trebuchet MS', sans-serif
+}
+
+
+header nav ul li {
+    color: rgb(1, 1, 1);
+    display: inline-block;
+    font-size: 1.1em;
+    margin-right: 25px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#FirstBMain {
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#goShop {
+    float: center;
+    margin-left: 71%;
+    margin-top: -15px;
+    width: 190px;
+}
+
+#buy {
+    margin-top: -100px;
+    margin-left: 66%;
+    margin-bottom: 13px;
+    width: 60px;
+
+}
+
+#warranty {
+    width: 140px;
+    top: -98px;
+    position: relative;
+}
+
+#bike1 {
+    width: 100%;
+}
+
+#footarriba {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    gap: 10px;
+}
+
+#footabajo {
+    display: flex;
+    padding-top: 40px;
+    gap: 30px;
+}
+
+.pequenos {
+    float: right;
+    width: 30px;
+    padding: 5px;
+}
+
+.punteada {
+    border-bottom: 2px dashed rgb(156, 156, 156);
+}
+
+.letragrande {
+    font-size: 4.2em;
+}
+
+.colorverde {
+    color: rgb(22, 200, 22);
+}
+
+.mitad {
+    margin-bottom: 40px;
+}
+
+.seccion1 {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 550px;
+    gap: 30px;
+
+}
+
+.videos {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.video1 {
+    width: 100%;
+    grid-column: 1 / 2;
+
+}
+
+.video2 {
+    width: 100%;
+    grid-column: 2 / 2;
+}
