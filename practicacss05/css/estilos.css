@@ -46,3 +46,20 @@ body {
 .navbar img {
     width: 70px;
 }
+
+.progress {
+    background-color: white;
+    color: black;
+    font-size: 0.6em;
+    text-align: left;
+}
+
+.progressbar {
+    margin-left: 10px;
+}
+
+.progresobarra {
+    width: 100%;
+}
+
+.progresologo {}
