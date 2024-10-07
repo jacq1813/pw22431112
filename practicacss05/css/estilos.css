@@ -62,4 +62,6 @@ body {
     width: 100%;
 }
 
-.progresologo {}
+.progresologo {
+    vertical-align: middle;
+}
