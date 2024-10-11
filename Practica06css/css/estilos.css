@@ -1,0 +1,162 @@
+body {
+    font-size: 1em;
+    margin: 0 auto;
+    /* tamaño por defecto tome el de la imagen que nos mostro de tablet en vertical*/
+    max-width: 834px;
+    min-width: 834px;
+    font-family: 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-rows: auto 1.2fr 3fr 1fr;
+    grid-template-areas:
+        "header"
+        "seccionBusqueda"
+        "principal"
+        "footerinf";
+}
+
+.botonesHead {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.button1 {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #fffcfc;
+}
+
+.button1:hover {
+    background-color: #4B5ED9;
+    border: 1px solid #fffcfc;
+    transition: 0.5s;
+}
+
+.button2 {
+    background-color: #4B5ED9;
+    color: white;
+    border: none;
+}
+
+.button2:hover {
+    background-color: #000000;
+    border: 1px solid #4B5ED9;
+    transition: 0.5s;
+}
+
+.button1,
+.button2 {
+    font-size: 0.7em;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.copyright {
+    align-self: end;
+    font-size: 0.7em;
+    margin-top: 45%;
+}
+
+.copyright img {
+    width: 40px;
+}
+
+.descripcion-items {
+    font-size: 0.8em;
+    color: #1C1823;
+    line-height: 1.5;
+}
+
+.footerinf {
+    grid-area: footerinf;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    font-size: 0.7em;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: white;
+    font-size: 0.7em;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.items img {
+    width: 50px;
+    height: auto;
+}
+
+.informacion {
+    max-width: 200px;
+    margin-left: 10%;
+}
+
+.informacion ul {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.logo-header img {
+    width: 30px;
+}
+
+.learn-more {
+    font-size: 0.8em;
+    color: #4B5ED9;
+    text-decoration: none;
+}
+
+.principal {
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    padding: 30px 0;
+    margin: 8%;
+    font-size: 0.8em;
+}
+
+.seccionBusqueda {
+    grid-area: seccionBusqueda;
+    font-size: 2.2em;
+    background-color: #DADBF1;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.seccionBusqueda input {
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #a8a7a7;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #898989;
+}
+
+.textoItems {
+    display: grid;
+    gap: 5px;
+}
+
+.titulo-item {
+    font-weight: bold;
+    font-size: 1em;
+}
