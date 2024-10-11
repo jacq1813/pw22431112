@@ -29,7 +29,7 @@ body {
 .button1:hover {
     background-color: #4B5ED9;
     border: 1px solid #fffcfc;
-    transition: 0.5s;
+
 }
 
 .button2 {
@@ -41,15 +41,16 @@ body {
 .button2:hover {
     background-color: #000000;
     border: 1px solid #4B5ED9;
-    transition: 0.5s;
 }
 
 .button1,
 .button2 {
+    color: white;
+    border-radius: 5px;
     font-size: 0.8em;
     cursor: pointer;
-    border-radius: 5px;
     padding: 7px;
+    transition: 0.5s;
 }
 
 .copyright {
