@@ -46,7 +46,7 @@ body {
 
 .button1,
 .button2 {
-    font-size: 0.7em;
+    font-size: 0.8em;
     cursor: pointer;
     border-radius: 5px;
     padding: 7px;
@@ -86,7 +86,7 @@ body {
     padding: 10px 30px;
     background-color: #000000;
     color: white;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .items {
@@ -98,7 +98,7 @@ body {
 }
 
 .items img {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
@@ -115,6 +115,7 @@ body {
 
 .logo-header img {
     width: 30px;
+    vertical-align: middle;
 }
 
 .learn-more {
