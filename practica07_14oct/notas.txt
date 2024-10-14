@@ -1,0 +1,7 @@
+Flexbox
+    Columnas o renglones (las dos al mismo tiempo no)
+    por default viene en renglones
+
+Body no puede ser contenedor en grid ni en flexbox
+Permite poner elementos aunque sobrepase su tamaño maximo, se adapta segun necesite y lo que sobrea 
+permanece invisible
