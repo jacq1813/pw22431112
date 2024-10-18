@@ -24,13 +24,11 @@
     */
 
     flex-flow: row nowrap;
-
     /*
     flex-flow es una propiedad abreviada que combina flex-direction y flex-wrap
     */
 
-    justify-content: space-around;
-
+    justify-content: space-evenly;
     /*
     justify-content puede tener los siguientes valores:
     - flex-start: los elementos se colocan al inicio del contenedor
@@ -40,6 +38,32 @@
     - space-around: los elementos se colocan con el mismo espacio alrededor de ellos
     */
 
+    align-items: baseline;
+
+    /*
+    align-items puede tener los siguientes valores:
+    - stretch: los elementos se estiran para ocupar todo el alto del contenedor
+    - flex-start: los elementos se colocan al inicio del contenedor
+    - flex-end: los elementos se colocan al final del contenedor
+    - center: los elementos se colocan en el centro del contenedor
+    - baseline: los elementos se colocan en la línea base del contenedor
+    */
+
+
+    align-content: space-between;
+
+    /*
+    align-content puede tener los siguientes valores:
+    - stretch: los elementos se estiran para ocupar todo el alto del contenedor
+    - flex-start: los elementos se colocan al inicio del contenedor
+    - flex-end: los elementos se colocan al final del contenedor
+    - center: los elementos se colocan en el centro del contenedor
+    - space-between: los elementos se colocan con el mismo espacio entre ellos
+    - space-around: los elementos se colocan con el mismo espacio alrededor de ellos
+    */
+
+
+    height: 200px;
 
 }
 
@@ -51,4 +75,22 @@
     width: 100px;
 
 
+}
+
+.b1 {
+    order: 3;
+    flex-grow: 5;
+    /*
+    flex-grow: para 
+    */
+}
+
+.b2 {
+    order: 1;
+    flex-grow: 2;
+}
+
+.b3 {
+    order: 2;
+    flex-grow: 1;
 }
