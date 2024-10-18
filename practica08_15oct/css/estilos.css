@@ -1,0 +1,54 @@
+.container {
+    background: khaki;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+
+    /*
+
+    flex-direction puede tener los siguientes valores:
+    - row: los elementos se colocan en una fila
+    - row-reverse: los elementos se colocan en una fila en orden inverso
+    - column: los elementos se colocan en una columna
+    - column-reverse: los elementos se colocan en una columna en orden inverso
+
+    */
+
+
+    /* 
+    flex-wrap puede tener los siguientes valores:
+    - nowrap: los elementos se colocan en una sola línea acorde al tamaño del contenedor
+    - wrap: los elementos se colocan en varias líneas
+    - wrap-reverse: los elementos se colocan en varias líneas en orden inverso
+
+    */
+
+    flex-flow: row nowrap;
+
+    /*
+    flex-flow es una propiedad abreviada que combina flex-direction y flex-wrap
+    */
+
+    justify-content: space-around;
+
+    /*
+    justify-content puede tener los siguientes valores:
+    - flex-start: los elementos se colocan al inicio del contenedor
+    - flex-end: los elementos se colocan al final del contenedor
+    - center: los elementos se colocan en el centro del contenedor
+    - space-between: los elementos se colocan con el mismo espacio entre ellos
+    - space-around: los elementos se colocan con el mismo espacio alrededor de ellos
+    */
+
+
+}
+
+.box {
+    border: 3px solid black;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+    width: 100px;
+
+
+}
