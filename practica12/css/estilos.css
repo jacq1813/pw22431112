@@ -156,6 +156,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
+
 }
 
 .cuad {
@@ -163,10 +164,11 @@ img {
     flex-direction: column;
     border-radius: 10px;
 
+
 }
 
 .cuad span {
-    display: block;
+
     padding: 10px;
     text-align: left;
     font-weight: bold;
@@ -174,7 +176,8 @@ img {
 
 .cuad img {
     width: 100%;
-    border-radius: 10px;
+    margin-top: auto;
+
 }
 
 .c1,
@@ -225,6 +228,7 @@ img {
 
 
 .footer {
+    margin-top: 10%;
     background-color: #11284c;
     color: white;
     display: grid;
@@ -233,11 +237,13 @@ img {
         "f1"
         "f2"
         "f3";
+
+    position: relative;
 }
 
 .footer1 {
     grid-area: f1;
-    margin: 5%;
+    margin: 5% 1.4% 0 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -254,20 +260,55 @@ img {
 .footer2 {
     grid-area: f2;
     display: flex;
-    justify-content: space-between;
+    gap: 15%;
+    margin-left: 5%;
+
 }
 
 .mf {
-    font-size: 0.7em;
+    font-size: 0.8em;
 
 }
 
 .footer2 ul {
     list-style: none;
+    padding: 0;
+    font-size: 0.7em;
+    font-weight: lighter;
+    line-height: 2;
+
+}
+
+.TitulomenuF {
+    font-size: 0.8em;
+    font-weight: bold;
 
 }
 
 .footer3 {
     grid-area: f3;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5% 0 5%;
+}
 
+.footer3 img {
+    width: 180px;
+    vertical-align: middle;
+}
+
+.txtinferior {
+    font-size: 0.6em;
+    font-weight: lighter;
+    color: #cebe79;
+}
+
+.footer4 {
+    display: flex;
+    justify-content: end;
+    margin: 0 -2% 0% 1%;
+}
+
+.footer4 img {
+    width: 30px;
 }
