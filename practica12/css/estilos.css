@@ -3,7 +3,7 @@ body {
     margin: 0px auto;
     max-width: 834px;
     min-width: 834px;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: Arial, Impact, Helvetica, sans-serif
 }
 
 .contenedor {
@@ -68,6 +68,7 @@ img {
     display: block;
     justify-content: center;
     align-items: center;
+    line-height: 1.5;
 
 }
 
@@ -79,7 +80,7 @@ img {
 .busqueda input[type="text"] {
     width: 80%;
     padding: 5px 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid #9c9c9d;
     font-size: 0.7em;
 }
@@ -105,19 +106,29 @@ img {
 }
 
 .anuncio {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
     padding: 7%;
     background-color: #f3f2fb;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 60%;
     text-align: left;
 
 }
 
+.anuncio .lng {
+
+    text-align: left;
+    width: 100%;
+}
+
 .anuncio p {
     font-size: 0.7em;
     color: #3a1fd2;
+    width: 100%;
+    text-align: left;
 }
 
 .anuncio input[type="button"] {
@@ -162,7 +173,7 @@ img {
 .cuad {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5px;
 
 
 }
@@ -237,8 +248,6 @@ img {
         "f1"
         "f2"
         "f3";
-
-    position: relative;
 }
 
 .footer1 {
@@ -250,6 +259,7 @@ img {
 
 .footer1 img {
     width: 40px;
+    height: 43px;
 }
 
 .txtG {
@@ -262,6 +272,7 @@ img {
     display: flex;
     gap: 15%;
     margin-left: 5%;
+    margin-top: 3%;
 
 }
 
