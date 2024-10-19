@@ -1,0 +1,273 @@
+body {
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 834px;
+    min-width: 834px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "barralateral principal"
+        "footer footer";
+    grid-template-columns: 1.5fr 3fr;
+
+}
+
+.header {
+    background-color: #f6f6ea;
+    padding: 10px;
+    grid-area: header;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.menuicon {
+    display: flex;
+    justify-content: center;
+
+}
+
+img {
+    margin-right: 20px;
+    width: 40px;
+
+}
+
+.header input[type="button"] {
+    margin-left: 20px;
+    background-color: #3a1fd2;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+.header nav ul li {
+    color: #3a1fd2;
+    display: inline-flex;
+    font-size: 0.7em;
+    padding: 0 10px;
+}
+
+.barralateral {
+    grid-area: barralateral;
+}
+
+.busqueda {
+    margin: 10%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.busqueda span {
+    font-size: 0.7em;
+    color: #000000;
+}
+
+.busqueda input[type="text"] {
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #9c9c9d;
+    font-size: 0.7em;
+}
+
+.menulateral {
+    display: block;
+    padding: 0 10%;
+
+}
+
+.menulateral p {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #3a1fd2;
+}
+
+.menulateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.7em;
+    line-height: 3;
+}
+
+.anuncio {
+    display: block;
+    margin: 20px;
+    padding: 7%;
+    background-color: #f3f2fb;
+    border-radius: 10px;
+    width: 60%;
+    text-align: left;
+
+}
+
+.anuncio p {
+    font-size: 0.7em;
+    color: #3a1fd2;
+}
+
+.anuncio input[type="button"] {
+    background-color: #3a1fd2;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 0.7em;
+
+}
+
+.principal {
+    grid-area: principal;
+    padding-right: 50px;
+
+}
+
+.seccuadritos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.txtCuadros {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #3a1fd2;
+}
+
+.seccuadritos2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.cuad {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.cuad span {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.cuad img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.c1,
+.c3 {
+    background-color: #f6f6ea;
+
+}
+
+.c2 {
+    background-color: #f3f2fb;
+}
+
+.Titulo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Titulo {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.Titulo a {
+    text-align: right;
+    font-size: 0.7em;
+    color: #3a1fd2;
+}
+
+.Titulo p {
+    font-size: 0.8em;
+
+}
+
+.items {
+
+    align-items: start;
+    margin-bottom: 20px;
+    border: 1px solid #bfbfc1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lng {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.footer {
+    background-color: #11284c;
+    color: white;
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:
+        "f1"
+        "f2"
+        "f3";
+}
+
+.footer1 {
+    grid-area: f1;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1 img {
+    width: 40px;
+}
+
+.txtG {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer2 {
+    grid-area: f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mf {
+    font-size: 0.7em;
+
+}
+
+.footer2 ul {
+    list-style: none;
+
+}
+
+.footer3 {
+    grid-area: f3;
+
+}
