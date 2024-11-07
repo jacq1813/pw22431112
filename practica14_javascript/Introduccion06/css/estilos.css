@@ -1,9 +1,20 @@
+html {
+    /* Para que no tome enm cuenta los bordes d ela caja */
+    box-sizing: border-box;
+}
+
 body {
     background-color: bisque;
     font-family: Arial, sans-serif;
     font-size: 16px;
     margin: 0px auto;
     width: 1024px;
+}
+
+header {
+    position: fixed;
+    left: 0px;
+    top: 0px;
 }
 
 button {
@@ -13,18 +24,26 @@ button {
     padding: 20px 10px;
 }
 
+.lista-personas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
 .tarjeta {
 
     border: 1px dashed gray;
+    border-radius: 10px;
     display: flex;
     flex-flow: column wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
     margin: 0pc auto;
-    margin-top: 20px;
-    padding: 20px;
-    width: 350px;
+    margin-top: 40px;
+    padding: 0px;
+    width: 200px;
 }
 
 #direccion,
