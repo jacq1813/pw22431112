@@ -3,9 +3,10 @@ import { Personal, PersonalNuevo } from '../typesPersonal';
 
 const conexion = mysql.createPool({
     host: 'localhost',
-    user: 'jacq',
-    password: 'jacqui123',
-    database: 'pw2024'
+    user: 'root',
+    database: 'pw2024',
+    port: 3307 // tuve que cambiar el puerto en mi caso a 3307 porque ya estaba ocupado el 3306
+    //xovxyw-keCnej-nawqy0
 });
 
 export const obtenerPersonal = async () => {

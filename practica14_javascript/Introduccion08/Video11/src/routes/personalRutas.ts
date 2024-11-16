@@ -9,7 +9,6 @@ router.get('/', async (_req: Request, res: Response) => {
     res.send(personal);
 })
 
-
 //http://localhost:3001/api/personal/1
 router.get('/:id', async (req: Request, res: Response) => {
     let personal = await personalServices.encuentraPersonal(Number(req.params.id));
@@ -19,13 +18,11 @@ router.get('/:id', async (req: Request, res: Response) => {
 // Insertar datos de personal
 router.post('/', async (req: Request, res: Response) => {
     try {
-
         const { nombre, direccion, telefono, estatus } = req.body;
         const nuevo = await personalServices.agregarPersonal({ nombre, direccion, telefono, estatus });
         res.send(nuevo);
     }
     catch (e) {
-
         res.send({ error: "No se puede agregar el personal" });
         // res.status(400).send("Error en los datos")
     }
