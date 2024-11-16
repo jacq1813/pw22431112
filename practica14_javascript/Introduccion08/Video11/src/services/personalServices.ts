@@ -1,5 +1,18 @@
 import mysql from 'mysql2/promise';
+import { z } from 'zod';
 import { Personal, PersonalNuevo } from '../typesPersonal';
+
+// validaciones con zod
+const personalSchema = z.object({
+
+    nombre: z.string().min(2, "Minimo 2 caracteres").max(200, "Maximo 200 caracteres"),
+    direccion: z.string().min(2).max(300),
+    telefono: z.string().min(10).max(15),
+    estatus: z.number().int().positive().min(1).max(2, "Los valores permitidos son 1 o 2")
+}).refine(data => data.nombre == "TEC DE CULIACAN", {
+    message: "La dirección debe ser TEC DE CULIACAN",
+    path: ["direccion"]
+})
 
 const conexion = mysql.createPool({
     host: 'localhost',
@@ -31,6 +44,10 @@ export const encuentraPersonal = async (id: number) => {
 
 export const agregarPersonal = async (nuevo: PersonalNuevo) => {
     try {
+        const validacion = personalSchema.safeParse(nuevo);
+        if (!validacion.success) {
+            return { error: validacion.error };
+        }
         const [results] = await conexion.query('INSERT INTO personal (nombre, direccion, telefono, estatus) VALUES (?, ?, ?, ?)', [nuevo.nombre, nuevo.direccion, nuevo.telefono, nuevo.estatus]);
         return results;
     }
