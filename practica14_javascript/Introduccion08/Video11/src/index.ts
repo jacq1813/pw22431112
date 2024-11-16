@@ -12,7 +12,7 @@ app.use(express.json());
 
 //puesto para escuchar la peticion del frontend
 const puerto = 3001;
-app.use('api/personal', personalRutas);
+app.use('/api/personal', personalRutas);
 /*
 app.get('/hola', (_req, res) => { //Se declara "req", pero su valor no se lee nunca.
     let fecha = new Date().toLocaleDateString();
