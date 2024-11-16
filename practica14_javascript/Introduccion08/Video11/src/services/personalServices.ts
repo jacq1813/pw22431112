@@ -47,3 +47,13 @@ export const modificarPersonal = async (modificado: Personal) => {
         return { error: "No se puede modificar el personal" };
     }
 }
+
+export const eliminarPersonal = async (id: number) => {
+    try {
+        const [results] = await conexion.query('DELETE FROM personal WHERE id = ?', id);
+        return results;
+    }
+    catch (err) {
+        return { error: "No se puede eliminar el personal" };
+    }
+}

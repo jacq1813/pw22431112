@@ -43,5 +43,17 @@ router.put('/', async (req: Request, res: Response) => {
         res.status(400).send("Error en los datos")
     }
 })
+
+// eliminar datos
+router.delete('/:id', async (req: Request, res: Response) => {
+    try {
+        const { id } = req.body;
+        const eliminado = await personalServices.eliminarPersonal(Number(Number(id)));
+        res.send(eliminado);
+    } catch (e) {
+        res.send({ error: "No se puede eliminar el personal" });
+    }
+})
+
 export default router;
 
