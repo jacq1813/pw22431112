@@ -1,25 +1,15 @@
 import mysql from 'mysql2/promise';
-import { z } from 'zod';
+import { personalSchema } from '../schemas/personal.schema';
 import { Personal, PersonalNuevo } from '../typesPersonal';
 
-// validaciones con zod
-const personalSchema = z.object({
-
-    nombre: z.string().min(2, "Minimo 2 caracteres").max(200, "Maximo 200 caracteres"),
-    direccion: z.string().min(2).max(300),
-    telefono: z.string().min(10).max(15),
-    estatus: z.number().int().positive().min(1).max(2, "Los valores permitidos son 1 o 2")
-}).refine(data => data.nombre == "TEC DE CULIACAN", {
-    message: "La dirección debe ser TEC DE CULIACAN",
-    path: ["direccion"]
-})
 
 const conexion = mysql.createPool({
     host: 'localhost',
     user: 'root',
     database: 'pw2024',
-    port: 3307 // tuve que cambiar el puerto en mi caso a 3307 porque ya estaba ocupado el 3306
+    port: 3307, // tuve que cambiar el puerto en mi caso a 3307 porque ya estaba ocupado el 3306
     //xovxyw-keCnej-nawqy0
+    multipleStatements: false
 });
 
 export const obtenerPersonal = async () => {
@@ -32,13 +22,41 @@ export const obtenerPersonal = async () => {
     }
 }
 
+
 export const encuentraPersonal = async (id: number) => {
     try {
+        const identificador = { id: id }
+        const validacion = personalSchema.safeParse(identificador);
+        if (!validacion.success) {
+            return {
+                error: validacion.error
+            }
+        }
         const [results] = await conexion.query('SELECT * FROM personal WHERE id = ? LIMIT 1', id);
         return results;
     }
     catch (err) {
         return { error: "No se puede encontrar el personal" };
+    }
+}
+
+export const obtenerPersonalTelefono = async (telefono: string) => {
+    try {
+        //const consulta = `SELECT * FROM personal WHERE telefono=${telefono} AND estatus=1`;
+        //const [results] = await conexion.query(consulta);
+
+        const tel = { telefono: telefono }
+        const validacion = personalSchema.safeParse(tel);
+        if (!validacion.success) {
+            return {
+                error: validacion.error
+            }
+        }
+        const [results] = await conexion.query('SELECT * FROM personal WHERE telefono = ? AND estatus = 1', telefono);
+        return results;
+    }
+    catch (err) {
+        return { error: "No se puede obtener el personal con ese numero de telefono" };
     }
 }
 
@@ -58,6 +76,13 @@ export const agregarPersonal = async (nuevo: PersonalNuevo) => {
 
 export const modificarPersonal = async (modificado: Personal) => {
     try {
+
+        const validacion = personalSchema.safeParse(modificado);
+        if (!validacion.success) {
+            return {
+                error: validacion.error
+            }
+        }
         const [results] = await conexion.query('UPDATE personal SET direccion = ?, telefono = ?, estatus = ? WHERE id = ?', [modificado.direccion, modificado.telefono, modificado.estatus, modificado.id]);
         return results;
     }

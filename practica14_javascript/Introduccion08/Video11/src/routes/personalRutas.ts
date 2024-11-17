@@ -15,6 +15,12 @@ router.get('/:id', async (req: Request, res: Response) => {
     res.send(personal);
 })
 
+//http://localhost:3001/api/personal/telefono/6672345678
+router.get('/telefono/:telefono', async (req: Request, res: Response) => {
+    let personal = await personalServices.obtenerPersonalTelefono(req.params.telefono);
+    res.send(personal);
+})
+
 // Insertar datos de personal
 router.post('/', async (req: Request, res: Response) => {
     try {
